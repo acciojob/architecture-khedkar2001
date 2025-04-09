@@ -1,16 +1,111 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Architecture Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 1100px;
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .imageContainer {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .imageContainer img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    td {
+      padding: 15px;
+      vertical-align: top;
+    }
+
+    .col-image {
+      width: 200px;
+    }
+
+    .col-text {
+      width: 600px;
+      color: #555;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    td img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #eef;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="container">
+    <h1>Discover Architectural Marvels</h1>
 
+    <div class="imageContainer">
+      <img src="https://via.placeholder.com/1100x400?text=Architectural+Showcase" alt="Architecture Header Image">
+    </div>
+
+    <table>
+      <tr>
+        <td class="col-image">
+          <img src="https://via.placeholder.com/200x200?text=Arch+1" alt="Architecture 1">
+        </td>
+        <td class="col-text">
+          <p>Modern architecture emphasizes clean lines, open spaces, and functionality. It often incorporates sustainable materials and natural lighting to create efficient and aesthetically pleasing environments.</p>
+        </td>
+        <td class="col-image">
+          <img src="https://via.placeholder.com/200x200?text=Arch+2" alt="Architecture 2">
+        </td>
+      </tr>
+      <tr>
+        <td class="col-image">
+          <img src="https://via.placeholder.com/200x200?text=Arch+3" alt="Architecture 3">
+        </td>
+        <td class="col-text">
+          <p>Classical architecture draws inspiration from ancient Greek and Roman designs. Features such as columns, domes, and intricate stone carvings are common in this timeless style.</p>
+        </td>
+        <td class="col-image">
+          <img src="https://via.placeholder.com/200x200?text=Arch+4" alt="Architecture 4">
+        </td>
+      </tr>
+    </table>
+  </div>
 </body>
-
 </html>
